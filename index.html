@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
-    <title>4ng3l
-        __/)     (\__
-     ,-'~~(   _   )~~`-.
-    /      \/'_`\/      \
-   |       /_(_)_\       |
-   |     _(/(\_/)\)_     |
-   |    / // \ / \\ \    |
-    \  | ``  / \ ''  |  /
-     \  )   /   \   (  /S
-      )/   /     \   \(
-      '    `-`-'-'    `S</title>
-</head>
-<body class="background">
-  
-    <div class="scene"></div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>4ng3l</title>
+    <meta name="description" content="">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
 
-    <script src="./three.min.js"></script>
-    <script src="./GLTFLoader.js"></script>
-    <script src="./app.js"></script>
+<body>
+
+   <a-scene>
+
+ 
+        <a-assets>
+           
+            <a-asset-item id="monster" src="assets\horse.gltf"></a-asset-item>
+        </a-assets>
     
+      
+  
+    
+   
+
+          <a-entity static-body gltf-model="#monster" scale ="300 500 300"position="-20 5 -370"
+          animation="property: rotation; to: 0 36 0; loop: true; dur: 100000"></a-entity>
+          <a-entity static-body gltf-model="#monster" scale ="300 500 300"position="-20 5 -370"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 100000"></a-entity>
+          <a-entity static-body gltf-model="#monster" scale ="300 500 300"position="-20 5 -370"
+          animation="property: rotation; to: 0 36 0; loop: true; dur: 100000"></a-entity>
+
+
+</a-scene>
 </body>
+
 </html>
