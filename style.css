@@ -1,0 +1,13 @@
+.scene,
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin:auto;
+  
+ 
+}
+.background{
+    background-image: url("");
+}
